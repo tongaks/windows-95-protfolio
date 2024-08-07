@@ -311,12 +311,12 @@ function skillsApp() {
   let intro = document.createElement('h3');
   intro.innerText = 'This is my current skills.';
 
-  let htmlSkill = imageAndParagraph(imgDir + '/html5-icon.png', 'img-small', 'HTML 5', 'html is the backbone of any webpages.');
-  let cssSkill = imageAndParagraph(imgDir + '/css-icon.png', 'img-small', 'CSS', 'css is what designs the webpage.');
-  let jsSkill = imageAndParagraph(imgDir + '/js-icon.png', 'img-small', 'JS', 'js allows some functions in the webpages.');
-  let cppSkill = imageAndParagraph(imgDir + '/cpp-icon.png', 'img-small', 'C++', 'C++ is one of my main focus.');
-  let rustSkill = imageAndParagraph(imgDir + '/rust-icon.png', 'img-small', 'RUST', 'I know a bit of rust. I like the memory safety feature.');
-  let linuxSkill = imageAndParagraph(imgDir + '/linux-icon.png', 'img-small', 'LINUX', 'I use linux operating system.');
+  let htmlSkill = imageAndParagraph('portfolio-images/html5-icon.png', 'img-small', 'HTML 5', 'html is the backbone of any webpages.');
+  let cssSkill = imageAndParagraph('portfolio-images/css-icon.png', 'img-small', 'CSS', 'css is what designs the webpage.');
+  let jsSkill = imageAndParagraph('portfolio-images/js-icon.png', 'img-small', 'JS', 'js allows some functions in the webpages.');
+  let cppSkill = imageAndParagraph('portfolio-images/cpp-icon.png', 'img-small', 'C++', 'C++ is one of my main focus.');
+  let rustSkill = imageAndParagrap('portfolio-images/rust-icon.png', 'img-small', 'RUST', 'I know a bit of rust. I like the memory safety feature.');
+  let linuxSkill = imageAndParagraph('portfolio-images/linux-icon.png', 'img-small', 'LINUX', 'I use linux operating system.');
 
   content.appendChild(intro);
   content.appendChild(htmlSkill);
