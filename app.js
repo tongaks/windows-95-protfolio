@@ -178,7 +178,7 @@ function imageAndParagraph(imgName, imgType, imgSrc, paragraph) {
   let container = document.createElement('div');
   container.className = 'content-flex';
 
-  let projectImg1 = addImg(imgDir + imgName, imgType);
+  let projectImg1 = addImg('portfolio-images/' + imgName, imgType);
   
   let imgTextContainer = document.createElement('div');
   imgTextContainer.className = 'text-content-center';
