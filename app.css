@@ -1,0 +1,182 @@
+:root {
+	--wallpaper-color: rgb(0, 162, 178);
+}
+
+@font-face {
+	font-family: normal;
+	src: url('fonts/w95fa.woff');
+}
+
+@font-face {
+	font-family: thick;
+	src: url('fonts/W95FA.otf');
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: normal;
+}
+
+body {
+	background-color: var(--wallpaper-color);
+}
+
+.app-grid {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	width: fit-content;
+	margin: 20px;
+}
+
+.app-icon {
+	color: white;
+	justify-content: center;
+	align-content: center;
+	user-select: none;
+	cursor: pointer;
+	width: fit-content;
+	height: fit-content;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+}
+
+.app-img img {
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+}
+
+/*ui start*/
+.ui-medium {
+	padding: 5px;
+	overflow: scroll;
+	position: absolute;
+	left: 40%;
+	top: 30%;
+	user-select: none;
+	width: 400px;
+	height: 400px;
+	background-color: lightgray;
+	box-shadow: 1px 1px 1px 1.5px black, 2px 2px 2px 1px white inset;
+}
+
+.ui-large {
+	padding: 5px;
+	overflow: scroll;
+	scrollbar-width: none;
+	position: absolute;
+	left: 40%;
+	top: 30%;
+	user-select: none;
+	width: 800px;
+	height: 400px;
+	background-color: lightgray;
+	box-shadow: 1px 1px 1px 1.5px black, 2px 2px 2px 1px white inset;
+}
+
+.top-controls {
+	font-family: thick;
+	justify-content: space-between;
+	color: white;
+	padding: 2px;
+	display: flex;
+	background-color: blue;
+}
+
+.close-bttn {
+	margin-right: 5px;
+	cursor: pointer;
+	color: white;
+	box-shadow: 1px 1px 1px 1.5px black, 2px 2px 2px 1px white inset;
+	background-color: lightgray;
+	height: 20px;
+}
+
+.close-bttn img {
+	width: 20px;
+}
+
+.content-center {
+	margin: 10px 10px;
+/*	background-color: #aaa;*/
+	padding: 5px;
+	text-align: center;
+	display: block;
+	justify-content: center;
+	align-content: center;
+}
+
+.content-flex {
+	margin-top: 20px;
+/*	background-color: #aaa;*/
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	padding: 5px;	
+}
+
+.img-large img {
+	pointer-events: none;
+	width: 500px;
+}
+
+.img-normal img {
+	pointer-events: none;
+	width: 200px;
+}
+
+.img-small img {
+	pointer-events: none;
+	width: 100px;
+}
+
+.text-content-center {
+	display: block;
+	margin: auto 20px;
+}
+
+.text-content {
+	margin: 10px;
+}
+
+/*ui end*/
+
+.panel {
+	display: flex;
+	z-index: 99;
+	position: absolute;
+	background-color: gray;
+	padding: 5px;
+	bottom: 0%;
+	width: 100svw;
+	box-shadow: 1px 1px 1px 0.5px black, 1px 1px 1px 1px white inset;
+}
+
+.app-panel {
+	font-family: thick;
+	cursor: pointer;
+	user-select: none;
+	display: flex;
+	box-shadow: 1px 1px 2px 1px black, 1px 1px 1px 1px white inset;
+	padding: 6px;
+	text-align: center;
+	margin-left: 10px;
+	width: 150px;
+}
+
+.start-bttn {
+	cursor: pointer;
+	user-select: none;
+	display: flex;
+	box-shadow: 1px 1px 2px 1px black, 1px 1px 1px 1px white inset;
+	padding: 2px;
+	text-align: center;
+}
+
+.start-bttn img {
+	margin-right: 5px;
+	width: 30px;
+}
